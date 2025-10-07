@@ -24,12 +24,11 @@ export function Navigation({ currentPage, onNavigate }) {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-8 space-x-reverse">
             <div className="flex items-center">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">س</span>
-              </div>
-              <span className="mr-3 text-xl font-bold text-slate-900 dark:text-white">
-                المستشفى السعودي الألماني
-              </span>
+              <img 
+                src="/src/assets/Hospital/SGH Hospital Color/Svg/SGH Hospital Color AR.svg" 
+                alt="المستشفى السعودي الألماني" 
+                className="h-12"
+              />
             </div>
             
             <div className="hidden md:flex space-x-4 space-x-reverse">
