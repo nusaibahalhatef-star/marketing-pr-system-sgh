@@ -17,6 +17,9 @@ from src.database import db, init_postgresql, init_mongodb, close_mongodb
 from src.routes.auth import auth_bp
 from src.routes.tasks import tasks_bp
 from src.routes.campaigns import campaigns_bp
+from src.routes.users import users_bp
+from src.routes.patients import patients_bp
+from src.routes.notifications import notifications_bp
 
 def create_app():
     """إنشاء وتكوين تطبيق Flask"""
@@ -41,6 +44,9 @@ def create_app():
     app.register_blueprint(auth_bp, url_prefix='/api/auth')
     app.register_blueprint(tasks_bp, url_prefix='/api/tasks')
     app.register_blueprint(campaigns_bp, url_prefix='/api/campaigns')
+    app.register_blueprint(users_bp, url_prefix='/api/users')
+    app.register_blueprint(patients_bp, url_prefix='/api/patients')
+    app.register_blueprint(notifications_bp, url_prefix='/api/notifications')
     
     # معالج الأخطاء العام
     @app.errorhandler(404)

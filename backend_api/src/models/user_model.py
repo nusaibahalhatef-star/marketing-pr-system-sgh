@@ -39,6 +39,56 @@ class User(db.Model):
         """التحقق من كلمة المرور"""
         return check_password_hash(self.password_hash, password)
     
+    def has_permission(self, permission_name):
+        """
+        التحقق من أن المستخدم لديه صلاحية محددة بناءً على دوره
+        """
+        # تعريف الصلاحيات لكل دور
+        role_permissions = {
+            'admin': ['*'],  # جميع الصلاحيات
+            'marketing_manager': [
+                'view_dashboard', 'manage_team', 'manage_campaigns', 
+                'manage_content', 'view_analytics', 'manage_crm',
+                'create_campaign', 'edit_campaign', 'delete_campaign',
+                'create_task', 'edit_task', 'delete_task',
+                'create_content', 'edit_content', 'delete_content',
+                'view_reports', 'export_data'
+            ],
+            'marketing_specialist': [
+                'view_dashboard', 'manage_campaigns', 'manage_content',
+                'create_campaign', 'edit_campaign',
+                'create_task', 'edit_task',
+                'create_content', 'edit_content',
+                'view_reports'
+            ],
+            'field_representative': [
+                'view_dashboard', 'manage_crm',
+                'create_patient', 'edit_patient',
+                'create_appointment', 'edit_appointment',
+                'create_interaction', 'view_reports'
+            ],
+            'customer_service': [
+                'view_dashboard', 'manage_crm',
+                'view_patient', 'create_interaction',
+                'view_reports'
+            ],
+            'content_creator': [
+                'view_dashboard', 'manage_content',
+                'create_content', 'edit_content',
+                'view_reports'
+            ],
+            'data_analyst': [
+                'view_dashboard', 'view_analytics',
+                'view_reports', 'export_data'
+            ]
+        }
+        
+        # الحصول على صلاحيات الدور
+        permissions = role_permissions.get(self.role, [])
+        
+        # التحقق من الصلاحية
+        return '*' in permissions or permission_name in permissions
+    
     def to_dict(self, include_sensitive=False):
         """تحويل الكائن إلى قاموس"""
         data = {
