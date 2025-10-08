@@ -20,6 +20,10 @@ from src.routes.campaigns import campaigns_bp
 from src.routes.users import users_bp
 from src.routes.patients import patients_bp
 from src.routes.notifications import notifications_bp
+from src.routes.appointments import appointments_bp
+from src.routes.interactions import interactions_bp
+from src.routes.content import content_bp
+from src.routes.analytics import analytics_bp
 
 def create_app():
     """إنشاء وتكوين تطبيق Flask"""
@@ -47,6 +51,10 @@ def create_app():
     app.register_blueprint(users_bp, url_prefix='/api/users')
     app.register_blueprint(patients_bp, url_prefix='/api/patients')
     app.register_blueprint(notifications_bp, url_prefix='/api/notifications')
+    app.register_blueprint(appointments_bp, url_prefix='/api/appointments')
+    app.register_blueprint(interactions_bp, url_prefix='/api/interactions')
+    app.register_blueprint(content_bp, url_prefix='/api/content')
+    app.register_blueprint(analytics_bp, url_prefix='/api/analytics')
     
     # معالج الأخطاء العام
     @app.errorhandler(404)
