@@ -1,0 +1,133 @@
+{
+  "project_info": {
+    "title": "نظام إدارة التسويق والعلاقات العامة (SGH Marketing & PR System)",
+    "created": 1774988121.1431656,
+    "last_updated": 1775002369.1000886,
+    "total_slides": 11
+  },
+  "slides": [
+    {
+      "id": "title_slide",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "introduction",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "challenges",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "content_management",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "scheduling_automation",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "seo_visibility",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "rbac_security",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "workflow",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "value_proposition",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "roadmap",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "closing",
+      "state": "edited",
+      "pageNum": 11
+    }
+  ],
+  "outline": [
+    {
+      "id": "title_slide",
+      "title": "نظام إدارة التسويق والعلاقات العامة (SGH Marketing & PR System)",
+      "summary": "شريحة العنوان والترحيب بالإدارة.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "introduction",
+      "title": "الرؤية والهدف العام للمشروع",
+      "summary": "شرح الغرض الأساسي من النظام وأهميته للمستشفى.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "challenges",
+      "title": "التحديات الحالية والحلول المقترحة",
+      "summary": "مقارنة بين الوضع الحالي والتحسينات التي يقدمها النظام.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "content_management",
+      "title": "إدارة المحتوى الرقمي المتقدمة",
+      "summary": "شرح ميزات محرر النصوص، إدارة الوسائط، والمعاينة الحية.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "scheduling_automation",
+      "title": "الجدولة الذكية والأتمتة",
+      "summary": "كيف يساهم النظام في توفير الوقت وضمان استمرارية التواجد الرقمي.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "seo_visibility",
+      "title": "تحسين محركات البحث والظهور الرقمي (SEO)",
+      "summary": "أهمية أدوات SEO المدمجة في جذب مرضى جدد.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "rbac_security",
+      "title": "إدارة الأدوار والصلاحيات (الأمن والتحكم)",
+      "summary": "شرح نظام التحكم في الوصول لضمان أمن المعلومات وجودة العمل.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "workflow",
+      "title": "دورة حياة المحتوى: من التخطيط إلى التنفيذ",
+      "summary": "توضيح خطوات العمل داخل النظام بشكل مبسط.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "value_proposition",
+      "title": "القيمة المضافة والعائد على الاستثمار (ROI)",
+      "summary": "إبراز فوائد النظام من حيث الكفاءة، السرعة، والنمو.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "roadmap",
+      "title": "خارطة الطريق المستقبلية (Roadmap)",
+      "summary": "نظرة على الميزات القادمة مثل نظام CRM وتطبيق الجوال.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "closing",
+      "title": "الخاتمة والخطوات التالية",
+      "summary": "شكر الإدارة وفتح باب النقاش.",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            font-family: 'Cairo', 'Inter', sans-serif;
+            color: #333333;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 60px;
+            padding-right: 80px;
+            border-bottom: 4px solid #C5A059;
+            width: fit-content;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 42px;
+            color: #004A99;
+            margin-bottom: 10px;
+        }
+        .content-wrapper {
+            display: flex;
+            padding-right: 80px;
+            padding-left: 80px;
+            gap: 50px;
+        }
+        .features-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .feature-card {
+            background: #E6F0FA;
+            padding: 20px;
+            border-right: 5px solid #004A99;
+        }
+        .feature-card h3 {
+            font-size: 24px;
+            color: #004A99;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .feature-card p {
+            font-size: 18px;
+            color: #444444;
+            line-height: 1.5;
+        }
+        .visual-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .timeline-container {
+            background: #F9F9F9;
+            padding: 30px;
+            border: 1px solid #E0E0E0;
+        }
+        .timeline-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #004A99;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .timeline-step {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .timeline-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 20px;
+            top: 40px;
+            width: 2px;
+            height: 20px;
+            background: #C5A059;
+        }
+        .step-icon {
+            width: 40px;
+            height: 40px;
+            background: #004A99;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            z-index: 1;
+        }
+        .step-text {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .efficiency-stat {
+            margin-top: 30px;
+            background: #004A99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .efficiency-stat span {
+            font-size: 36px;
+            font-weight: bold;
+            color: #C5A059;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>الجدولة الذكية والأتمتة</h2>
+        </div>
+        <div class="content-wrapper">
+            <div class="features-list">
+                <div class="feature-card">
+                    <h3><i class="fas fa-calendar-check"></i> النشر المجدول المسبق</h3>
+                    <p>إمكانية تخطيط وجدولة المحتوى لأسابيع أو أشهر قادمة، مما يضمن التواجد الرقمي المستمر حتى في أوقات العطلات.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><i class="fas fa-clock"></i> استهداف أوقات الذروة</h3>
+                    <p>تحديد المواعيد المثالية للنشر بناءً على سلوك الجمهور لضمان أعلى معدلات التفاعل والوصول.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><i class="fas fa-sync"></i> التزامن عبر المنصات</h3>
+                    <p>أتمتة توزيع المحتوى عبر الموقع الإلكتروني ومنصات التواصل الاجتماعي بضغطة زر واحدة.</p>
+                </div>
+            </div>
+            <div class="visual-side">
+                <div class="timeline-container">
+                    <div class="timeline-title">سير العمل المؤتمت</div>
+                    <div class="timeline-step">
+                        <div class="step-icon"><i class="fas fa-edit"></i></div>
+                        <div class="step-text">إنشاء المحتوى وتجهيزه</div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-icon"><i class="fas fa-history"></i></div>
+                        <div class="step-text">تحديد تاريخ ووقت النشر</div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-icon"><i class="fas fa-robot"></i></div>
+                        <div class="step-text">النشر التلقائي دون تدخل بشري</div>
+                    </div>
+                </div>
+                <div class="efficiency-stat">
+                    <p>توفير في الوقت التشغيلي بنسبة تصل إلى</p>
+                    <span>40%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

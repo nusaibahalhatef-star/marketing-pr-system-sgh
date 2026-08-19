@@ -1,0 +1,202 @@
+.categories-and-tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.btn-add {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.item:hover {
+  background: #f0f0f0;
+  border-color: #667eea;
+}
+
+.item-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  flex: 1;
+}
+
+.item-checkbox input {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  accent-color: #667eea;
+}
+
+.item-checkbox span {
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-delete {
+  background: #ffebee;
+  color: #ef5350;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.btn-delete:hover {
+  background: #ef5350;
+  color: white;
+}
+
+.tags-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tag-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0f4ff 100%);
+  border: 1px solid #667eea;
+  border-radius: 2rem;
+  transition: all 0.2s ease;
+}
+
+.tag-item:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.tag-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.tag-checkbox input {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  accent-color: #667eea;
+}
+
+.tag-checkbox span {
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.tag-item:hover .tag-checkbox span {
+  color: white;
+}
+
+.btn-delete-tag {
+  background: transparent;
+  border: none;
+  color: #667eea;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.btn-delete-tag:hover {
+  color: #ef5350;
+}
+
+.tag-item:hover .btn-delete-tag {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .categories-and-tags {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .tags-cloud {
+    gap: 0.5rem;
+  }
+
+  .tag-item {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}

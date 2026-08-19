@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملخص الخطوات</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1a2332;
+            color: #e8edf3;
+            overflow: hidden;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #1a2332 0%, #0f1620 100%);
+            display: flex;
+            flex-direction: column;
+            padding: 60px 80px;
+            position: relative;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #10b981;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #10b981;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            flex: 1;
+        }
+        
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #00d9ff;
+            font-family: 'JetBrains Mono', monospace;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.3);
+        }
+        
+        .item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px;
+            background: rgba(0, 217, 255, 0.02);
+        }
+        
+        .item-number {
+            font-size: 16px;
+            font-weight: 700;
+            color: #7c3aed;
+            font-family: 'JetBrains Mono', monospace;
+            min-width: 30px;
+        }
+        
+        .item-text {
+            font-size: 14px;
+            color: #e8edf3;
+            line-height: 1.5;
+        }
+        
+        .item-text strong {
+            color: #10b981;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #7c3aed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-text {
+            font-size: 14px;
+            color: #10b981;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .footer-accent {
+            font-size: 24px;
+            color: #00d9ff;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="title">✓ ملخص الخطوات</h1>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <div class="section-title">ما تم إنجازه</div>
+                
+                <div class="item">
+                    <div class="item-number">1</div>
+                    <div class="item-text">تثبيت جميع <strong>المتطلبات الأساسية</strong> والأدوات</div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-number">2</div>
+                    <div class="item-text">إعداد <strong>قواعد البيانات</strong> (PostgreSQL و MongoDB)</div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-number">3</div>
+                    <div class="item-text">تشغيل <strong>الواجهة الخلفية</strong> (FastAPI)</div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-number">4</div>
+                    <div class="item-text">تشغيل <strong>الواجهة الأمامية</strong> (React)</div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-number">5</div>
+                    <div class="item-text">تشغيل <strong>تطبيقات الجوال</strong> (React Native)</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">الخطوات التالية</div>
+                
+                <div class="item">
+                    <div class="item-number">1</div>
+                    <div class="item-text">اختبار جميع المكونات والتحقق من <strong>الاتصالات</strong></div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-number">2</div>
+                    <div class="item-text">تكوين <strong>التكاملات الخارجية</strong> (Google Analytics, Twilio, إلخ)</div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-number">3</div>
+                    <div class="item-text">تحميل <strong>البيانات الوهمية</strong> للاختبار</div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-number">4</div>
+                    <div class="item-text">نشر التطبيق في بيئة <strong>الإنتاج</strong></div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-number">5</div>
+                    <div class="item-text">تدريب فريق <strong>التسويق والعلاقات العامة</strong></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-text">
+                📚 للمزيد من المعلومات، راجع <strong>INSTALLATION_GUIDE_MACOS.md</strong>
+            </div>
+            <div class="footer-accent">→</div>
+        </div>
+    </div>
+</body>
+</html>

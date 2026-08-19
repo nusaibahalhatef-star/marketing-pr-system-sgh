@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px; /* keep as required */
+            background: #FFFFFF;
+            font-family: 'Cairo', 'Inter', sans-serif;
+            color: #333333;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 60px; /* must keep */
+            padding-right: 48px;
+            border-bottom: 4px solid #C5A059;
+            width: fit-content;
+            margin-bottom: 16px; /* reduced from 40 to save height */
+        }
+        h2 {
+            font-size: 42px;
+            color: #004A99;
+            margin-bottom: 10px;
+        }
+        .content-wrapper {
+            display: flex;
+            align-items: flex-start;
+            padding-right: 40px;
+            padding-left: 40px;
+            gap: 24px; /* reduced gap */
+        }
+        .text-content {
+            flex: 1.2;
+        }
+        .vision-box {
+            background: #E6F0FA;
+            padding: 18px; /* reduced from 30 */
+            border-right: 6px solid #004A99;
+            margin-bottom: 20px; /* reduced */
+        }
+        .vision-box p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #004A99;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .objectives {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* switched to two columns to reduce vertical length */
+            gap: 18px 20px; /* row-gap and column-gap */
+        }
+        .objective-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px; /* slightly reduced */
+            padding: 6px 0; /* compact each item */
+        }
+        .icon-box {
+            min-width: 44px;
+            height: 44px;
+            background: #004A99;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        .objective-text h3 {
+            font-size: 22px;
+            color: #004A99;
+            margin: 0 0 6px 0;
+        }
+        .objective-text p {
+            font-size: 18px;
+            color: #666666;
+            margin: 0;
+            line-height: 1.4; /* tighter line height to save space */
+        }
+        .image-content {
+            flex: 0.8;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* align to top to avoid extra center spacing */
+            padding-top: 8px;
+        }
+        .side-image {
+            width: 380px;
+            height: 360px; /* reduced from 500 to save a lot of vertical space */
+            object-fit: cover;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>الرؤية والهدف العام للمشروع</h2>
+        </div>
+        <div class="content-wrapper">
+            <div class="text-content">
+                <div class="vision-box">
+                    <p>"منصة رقمية مركزية لأتمتة وتوحيد جميع الأنشطة التسويقية والإعلامية للمستشفى السعودي الألماني، لضمان الريادة الرقمية والتميز المؤسسي."</p>
+                </div>
+                <div class="objectives">
+                    <div class="objective-item">
+                        <div class="icon-box"><i class="fas fa-fingerprint"></i></div>
+                        <div class="objective-text">
+                            <h3>تعزيز الهوية المؤسسية</h3>
+                            <p>ضمان اتساق الرسائل التسويقية والهوية البصرية عبر القنوات الرقمية.</p>
+                        </div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                        <div class="objective-text">
+                            <h3>رفع الكفاءة التشغيلية</h3>
+                            <p>تقليل الوقت في إدارة المحتوى والتنسيق بين الفرق حتى 40%.</p>
+                        </div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                        <div class="objective-text">
+                            <h3>دعم اتخاذ القرار</h3>
+                            <p>توفير بيانات دقيقة وتحليلات فورية لأداء الحملات.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="Vision" class="side-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            font-family: 'Cairo', 'Inter', sans-serif;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+        .left-panel {
+            flex: 1;
+            background: linear-gradient(135deg, #004A99 0%, #002D5E 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 40px 40px; /* keep top padding, reduce right/bottom */
+            color: #FFFFFF;
+            z-index: 2;
+        }
+        .right-panel {
+            flex: 1;
+            background: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+            position: relative;
+        }
+        .right-panel::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 74, 153, 0.1);
+        }
+        .logo-placeholder {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px; /* reduced from 40 */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            color: #C5A059;
+        }
+        h1 {
+            font-size: 56px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+        .subtitle {
+            font-size: 28px;
+            color: #C5A059;
+            margin-bottom: 40px; /* reduced from 60 */
+        }
+        .footer-info {
+            margin-top: auto;
+            font-size: 18px;
+            opacity: 0.8;
+        }
+        .accent-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: #C5A059;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-panel">
+            <div class="logo-placeholder">
+                <i class="fas fa-hospital-symbol logo-icon"></i>
+                <span>المستشفى السعودي الألماني (SGH)</span>
+            </div>
+            <h1>نظام إدارة التسويق والعلاقات العامة</h1>
+            <div class="subtitle">SGH Marketing & PR System</div>
+            <div class="footer-info">
+                <p>عرض تقديمي للإدارة العليا</p>
+                <p>مارس 2026</p>
+            </div>
+        </div>
+        <div class="right-panel"></div>
+        <div class="accent-bar"></div>
+    </div>
+</body>
+</html>

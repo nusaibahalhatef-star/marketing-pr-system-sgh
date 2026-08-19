@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px; /* keep as required */
+            background: #FFFFFF;
+            font-family: 'Cairo', 'Inter', sans-serif;
+            color: #333333;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 60px; /* must not change */
+            padding-right: 80px;
+            border-bottom: 4px solid #C5A059;
+            width: fit-content;
+            margin-bottom: 16px; /* reduced from 40 to save vertical space */
+        }
+        h2 {
+            font-size: 42px;
+            color: #004A99;
+            margin-bottom: 10px;
+        }
+        .comparison-wrapper {
+            display: flex;
+            padding-right: 80px;
+            padding-left: 80px;
+            gap: 24px; /* slightly reduced horizontal gap */
+        }
+        .column {
+            flex: 1;
+            padding: 12px; /* reduced from 30px */
+            border-radius: 12px;
+        }
+        .challenges-col {
+            background: #F9F9F9;
+        }
+        .solutions-col {
+            background: #E6F0FA;
+        }
+        h3 {
+            font-size: 28px;
+            margin-bottom: 12px; /* reduced from 30px */
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .challenges-col h3 { color: #D32F2F; }
+        .solutions-col h3 { color: #004A99; }
+        
+        .list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px; /* reduced from 25px */
+        }
+        .icon-circle {
+            min-width: 36px; /* reduced from 40px */
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+        .challenges-col .icon-circle { background: #FFEBEE; color: #D32F2F; }
+        .solutions-col .icon-circle { background: #FFFFFF; color: #004A99; }
+        
+        .item-text b {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 4px; /* slightly reduced */
+        }
+        .item-text p {
+            font-size: 16px;
+            color: #666666;
+            line-height: 1.28; /* tightened a bit */
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>التحديات الحالية والحلول المقترحة</h2>
+        </div>
+        <div class="comparison-wrapper">
+            <div class="column challenges-col">
+                <h3><i class="fas fa-exclamation-triangle"></i> التحديات الحالية</h3>
+                <div class="list-item">
+                    <div class="icon-circle"><i class="fas fa-times"></i></div>
+                    <div class="item-text">
+                        <b>تشتت المحتوى والبيانات</b>
+                        <p>تخزين الملفات في أماكن متعددة (إيميلات، واتساب، مجلدات شخصية) مما يصعب الوصول إليها.</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="icon-circle"><i class="fas fa-times"></i></div>
+                    <div class="item-text">
+                        <b>العمليات اليدوية المجهدة</b>
+                        <p>الاعتماد الكلي على التدخل البشري في كل خطوة من التخطيط إلى النشر.</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="icon-circle"><i class="fas fa-times"></i></div>
+                    <div class="item-text">
+                        <b>صعوبة قياس الأداء</b>
+                        <p>غياب لوحة تحكم مركزية توضح نتائج الحملات ومدى تحقيق الأهداف التسويقية.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column solutions-col">
+                <h3><i class="fas fa-check-circle"></i> حلول النظام الجديد</h3>
+                <div class="list-item">
+                    <div class="icon-circle"><i class="fas fa-check"></i></div>
+                    <div class="item-text">
+                        <b>قاعدة بيانات مركزية</b>
+                        <p>مستودع رقمي موحد لجميع الأصول والوسائط والمحتوى يسهل البحث والاسترجاع.</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="icon-circle"><i class="fas fa-check"></i></div>
+                    <div class="item-text">
+                        <b>أتمتة سير العمل</b>
+                        <p>نظام جدولة آلي يقلل الأخطاء البشرية ويضمن النشر في المواعيد المحددة مسبقاً.</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="icon-circle"><i class="fas fa-check"></i></div>
+                    <div class="item-text">
+                        <b>تحليلات فورية ودقيقة</b>
+                        <p>تقارير ذكية ولوحات معلومات تفاعلية تدعم اتخاذ قرارات مبنية على البيانات.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
